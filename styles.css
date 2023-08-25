@@ -1,0 +1,84 @@
+body, h1, h2, h3, p, button {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('assets/images/backgroundimage.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, background-image 1s ease-in-out;
+
+
+
+}
+
+body.loaded {
+    opacity: 1;
+}
+.wfont {
+    color: white;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+
+/* Hamburger menu styles */
+
+.menu {
+    display: none; /* Hide the menu by default */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+    z-index: 2;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+   
+}
+
+.hamburger:hover .bar {
+    opacity: 0;
+}
+.hamburger:hover .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger:hover .bar:nth-child(3) {
+    opacity: 0;
+}
+
+
+.menu li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+}
+
