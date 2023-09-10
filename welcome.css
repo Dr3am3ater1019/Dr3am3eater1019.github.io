@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+.welcome-screen {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#welcome-text {
+    color: white;
+    font-size: 190px;
+    opacity: 0;
+    animation: fade-in 2s forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.typing-cursor {
+    width: 2px;
+    height: 150px;
+    background-color: red;
+    margin-left: 10px;
+    animation: cursor-blink 1s infinite;
+}
+
+@keyframes cursor-blink {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,253 @@
+.hamburger {
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    margin: 3px 0;
+    background-color: #000000;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    width: auto;
+    max-width: 200px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: right;
+    padding: 0 ;
+    border-radius: 10px;
+}
+
+.menu.show-menu {
+    display: block;
+}
+
+.menu li {
+    text-align: center;
+    padding: 0;
+    border-bottom: none;
+    list-style-type: none;
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    display: block;
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+.menu a:hover {
+    color: #ddd;
+}
+
+.ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; 
+}
+
+.header {
+    font-size: 110px; 
+    text-align: center;
+    margin-top: 20vh; 
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+
+
+.down-arrow {
+    text-align: center;
+    margin-top: 20px;
+    position: fixed;
+    text-align: center;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+
+}
+@keyframes flash {
+    0% {
+        opacity: 1; /* Start with full opacity */
+    }
+    50% {
+        opacity: 0; /* Halfway through the animation, make it invisible */
+    }
+    100% {
+        opacity: 1; /* End with full opacity again */
+    }
+}
+
+.down-arrow {
+    text-align: center;
+    margin-top: 20px;
+    position: fixed;
+    text-align: center;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    animation: flash 2s ease-in-out infinite;
+}
+
+
+.down-arrow.hide {
+    display: none;
+}
+
+.down-arrow a {
+    font-size: 18px; 
+    text-decoration: none;
+    color: #000; 
+    
+    
+    
+}
+
+.down-arrow a:hover {
+    color: #ddd; 
+}
+
+.fat-stack {
+    font-size: 26px;
+}
+
+.fat-stack-2x {
+    color: #000000;
+}
+
+.scroll-indicator {
+    font-size: 18px;
+    color: #000;
+}
+
+#pong-text {
+    text-align: center;
+    font-size: 110px;
+    margin-top: 20vh;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s, display 0.3s; /* Adjust the duration here */
+}
+
+
+.note {
+    font-size: 16px; 
+    text-align: center;
+}
+
+.fade-in {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.header a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header a:hover {
+    color: #ddd;
+}
+
+.header1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 110px; 
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+/* Main styles */
+body {
+  /* img size is 50x50 */
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse 0.92s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
